@@ -1,0 +1,11 @@
+<?php
+
+
+function service_mail($key, &$message, $params) {
+
+  $message['langcode'] = 'fr';
+  $message['from'] = \Drupal::config('system.site')->get('mail');
+  $message['subject'] = t('Mail sending');
+  $message['body'][] = $params['message'];
+
+}

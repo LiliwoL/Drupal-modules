@@ -1,0 +1,17 @@
+# Champs requis
+# ==========
+name: Module découverte des services
+# Type de module. Module ou theme
+type: module
+
+description: 'Un module avec des services'
+
+# Compatibilité avec toutes ls versions Drupal 9
+core_version_requirement: ^8 || ^9
+
+# Champs optionnels
+package: Formation
+
+# Liste des autres modules dont celui ci dépend
+#dependencies:
+#- content

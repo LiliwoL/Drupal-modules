@@ -1,0 +1,12 @@
+# Nom de la route
+route_intro:
+  # URL ou Path
+  path: /module/route/intro
+  # Config de la route
+  defaults:
+    # Controller et l'action qui prend en charge cette route
+    _controller: Drupal\routes\Controller\RouteController::introduction
+  # Droits d'accès
+  requirements:
+    # Permissions minimales pour accéder à cette route
+    _permission: 'access content'

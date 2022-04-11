@@ -1,0 +1,12 @@
+# Nom de la route
+service_mail:
+  # URL ou Path
+  path: /module/service/mail
+  # Config de la route
+  defaults:
+    # Controller et l'action qui prend en charge cette route
+    _controller: Drupal\service\Controller\ServiceController::send
+  # Droits d'accès
+  requirements:
+    # Permissions minimales pour accéder à cette route
+    _permission: 'access content'
