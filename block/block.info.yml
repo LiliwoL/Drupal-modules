@@ -13,5 +13,5 @@ core_version_requirement: ^8 || ^9
 package: Formation
 
 # Liste des autres modules dont celui ci dépend
-#dependencies:
-#- content
+dependencies:
+  - drupal:block

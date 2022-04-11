@@ -1,0 +1,5 @@
+services:
+  dino_roar.roar_generator:
+    class: Drupal\dino_roar\Service\RoarGenerator
+  dino_roar.roar_mailer:
+    class: Drupal\dino_roar\Service\RoarMail

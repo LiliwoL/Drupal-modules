@@ -1,0 +1,20 @@
+# Fichier yaml:
+# cle: valeur
+
+# Champs requis
+# ==============
+name: Dino Roar
+# Type de module. module ou theme
+type: module
+description: "Roaaaar!"
+
+# Version Drupal compatible avec ce module
+core_version_requirement: ^8 || ^9
+
+# Champs optionnels
+# =================
+package: Formation
+
+# Liste des autres modules dont celui ci dépend
+# dependencies:
+#	- ...

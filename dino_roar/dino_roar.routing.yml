@@ -1,0 +1,53 @@
+# nom de la route
+dino_says:
+  # URL
+  path: /the/dino/says
+  defaults:
+    # Controller et action qui va prendre en charge cette route
+    _controller: Drupal\dino_roar\Controller\RoarController::roar
+  requirements:
+    # Permissions minimales poiur accéder à cette route
+    _permission: 'access content'
+
+# ########################
+
+# nom de la route avec un paramètre integer
+dino_repeats:
+  # URL
+  path: /the/dino/says/{repeat}
+  defaults:
+    # Controller et action qui va prendre en charge cette route
+    _controller: Drupal\dino_roar\Controller\RoarController::roarRepeat
+  requirements:
+    # Permissions minimales poiur accéder à cette route
+    _permission: 'access content'
+    repeat: '[0-9]+'
+
+# ########################
+
+# nom de la route avec un paramètre
+dino_says_something:
+  # URL
+  path: /the/dino/says/{something}
+  defaults:
+    # Controller et action qui va prendre en charge cette route
+    _controller: Drupal\dino_roar\Controller\RoarController::roarSomething
+  requirements:
+    # Permissions minimales poiur accéder à cette route
+    _permission: 'access content'
+    something: '[a-zA-Z]+'
+
+
+# ########################
+
+# nom de la route avec un paramètre integer
+dino_repeats_service:
+  # URL
+  path: /the/dino/says/service/{repeat}
+  defaults:
+    # Controller et action qui va prendre en charge cette route
+    _controller: Drupal\dino_roar\Controller\RoarController::roarRepeatWithService
+  requirements:
+    # Permissions minimales poiur accéder à cette route
+    _permission: 'access content'
+    repeat: '[0-9]+'
