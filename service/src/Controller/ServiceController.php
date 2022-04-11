@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\routes\Controller;
+namespace Drupal\service\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\service\Service\MailerService;
@@ -11,7 +11,7 @@ class ServiceController extends ControllerBase
 
   public function send()
   {
-    $mailService = new MailService();
+    $mailService = new MailerService();
     $retour = $mailService->sendMail( "moi@campus-eni.fr" );
 
     dd($retour);

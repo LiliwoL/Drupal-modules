@@ -21,6 +21,9 @@ class MailerService
     $mailManager = \Drupal::service('plugin.manager.mail');
     $array = $mailManager->mail("routes", "key", $to, $langcode, $params, $reply, true);
 
+    // Messenger Service
+    \Drupal::messenger()->addStatus('show a status to the user.');
+
     return $array;
   }
 }
